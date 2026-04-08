@@ -1,2 +1,2 @@
-# portfolio-website
+# portfolio
 Portfolio for Omar Baracat
