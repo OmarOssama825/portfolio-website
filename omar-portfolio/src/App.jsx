@@ -249,12 +249,12 @@ export default function App() {
   };
 
   const handleLeftZoneEnter = () => {
-    setDirection("left");
+    setDirection("right");
     resumeScroll();
   };
 
   const handleRightZoneEnter = () => {
-    setDirection("right");
+    setDirection("left");
     resumeScroll();
   };
 
