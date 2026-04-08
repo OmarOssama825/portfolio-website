@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import droneImg from "./assets/Visuals/robairImg.jpg";
+import droneImg from "./assets/Visuals/mpc.gif";
 import robairImg from "./assets/Visuals/robairImg.jpg";
-import smartcityImg from "./assets/Visuals/robairImg.jpg";
+import smartcityImg from "./assets/Visuals/Warp.png";
 import beamImg from "./assets/Visuals/robairImg.jpg";
-
+import roboticArmImg from "./assets/Visuals/robairImg.jpg";
+import cncImg from "./assets/Visuals/robairImg.jpg";
+import microrobotImg from "./assets/Visuals/robairImg.jpg";
 
 
 const featuredProjects = [
@@ -67,7 +69,28 @@ const featuredProjects = [
         "Strengthened the testbed as a research platform for miniature autonomous driving scenarios.",
     },
   },
+  
   {
+  id: "robotic-arm",
+  title: "Robotic Arm",
+  period: "2024",
+  description:
+    "Designed and controlled a robotic arm using MATLAB/Simulink and Python, including simulation and Arduino prototyping.",
+  tags: ["Robotics", "Simulink", "Arduino"],
+  image: roboticArmImg,
+  details:
+    "This project involved robotic arm design, control, simulation, and prototyping across software and hardware tools.",
+  expanded: {
+    goal:
+      "Design and control a robotic arm while connecting simulation with practical prototyping.",
+    tools: ["MATLAB", "Simulink", "Python", "Simscape", "Arduino", "CoppeliaSim"],
+    contribution:
+      "Worked on modeling, control, simulation, and prototyping of the robotic arm system.",
+    result:
+      "Produced a robotic arm workflow spanning simulation, control design, and hardware-oriented implementation.",
+  },
+},
+{
     id: "beam",
     title: "Self-Balancing Beam",
     period: "2023",
@@ -87,7 +110,54 @@ const featuredProjects = [
         "Created a working embedded balancing system that combined estimation, control, and real-time execution.",
     },
   },
+{
+  id: "microrobot",
+  title: "Microrobot Motion Analysis",
+  period: "2022",
+  description:
+    "Analyzed microrobot motion in fluid flow for biomedical applications using experimental video processing.",
+  tags: ["Microrobotics", "Biomedical", "Video Analysis"],
+  image: microrobotImg,
+  details:
+    "This project focused on analyzing the motion of microrobots in flow conditions relevant to biomedical applications such as targeted drug delivery.",
+  expanded: {
+    goal:
+      "Evaluate microrobot motion under different actuation frequencies and flow rates for biomedical use cases.",
+    tools: ["Tracker", "Video Processing", "Data Analysis", "Microrobotics"],
+    contribution:
+      "Recorded and processed experiments, extracted motion behavior, and compared velocity responses under varying conditions.",
+    result:
+      "Generated motion analysis results useful for understanding actuation and flow effects in microrobotic systems.",
+  },
+},
+
 ];
+
+const detailedProjects = [
+  ...featuredProjects,
+  {
+    id: "cnc",
+    title: "CNC Programming for Molds and Dies",
+    period: "2023",
+    description:
+      "Designed and simulated CNC machining workflows for molds and dies using Inventor CAM.",
+    tags: ["CNC", "Inventor CAM", "Manufacturing"],
+    image: cncImg,
+    details:
+      "This internship project focused on CNC programming, toolpath planning, machining simulation, and G-code generation.",
+    expanded: {
+      goal:
+        "Develop accurate and efficient CNC machining workflows for molds and dies manufacturing.",
+      tools: ["Inventor CAM", "Toolpath Planning", "G-code", "Manufacturing"],
+      contribution:
+        "Created machining setups, simulated multi-axis operations, and generated manufacturing-ready CNC programs.",
+      result:
+        "Built practical CNC experience in digital manufacturing workflow from design to simulated machining output.",
+    },
+  },
+];
+
+
 
 const scrollingProjects = [...featuredProjects, ...featuredProjects];
 
@@ -216,7 +286,7 @@ export default function App() {
       <main>
         <section className="hero">
           <p className="eyebrow">Robotics • Control • Autonomous Systems</p>
-          <h1>Robotics portfolio built to show my work fast.</h1>
+          <h1>Robotics Portfolio</h1>
           <p className="hero-text">
             I work on robotics, control, ROS2, embedded systems, and autonomous
             platforms. This portfolio highlights my projects with visuals,
@@ -299,7 +369,7 @@ export default function App() {
           <h2>Project Details</h2>
 
           <div className="details-list">
-            {featuredProjects.map((project) => {
+            {detailedProjects.map((project) => {
               const isExpanded = !!expandedProjects[project.id];
 
               return (
@@ -420,8 +490,8 @@ export default function App() {
         <section id="about" className="section">
           <h2>About</h2>
           <p>
-            Robotics engineer focused on autonomy, control, perception, and
-            embedded systems.
+            A second year MSc Robotics student with focus on autonomy, control, perception,
+            embedded systems, and reinfrocement learning.
           </p>
         </section>
         <section id="contact" className="section">
