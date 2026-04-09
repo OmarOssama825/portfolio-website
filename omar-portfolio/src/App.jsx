@@ -755,7 +755,7 @@ export default function App() {
                 LinkedIn
               </a>
 
-              <a className="btn btn-secondary" href="#" target="_blank" rel="noreferrer">
+              <a className="btn btn-secondary" href="https://github.com/OmarOssama825/" target="_blank" rel="noreferrer">
                 GitHub
               </a>
 
