@@ -4,7 +4,7 @@ import robairImg from "./assets/Visuals/robair.gif";
 import smartcityImg from "./assets/Visuals/Warp.png";
 import beamImg from "./assets/Visuals/beamo.gif";
 import roboticArmImg from "./assets/Visuals/roboticarm.gif";
-import cncImg from "./assets/Visuals/inventorCAM.jpg";
+import cncImg from "./assets/Visuals/InventorCAM.jpg";
 import microrobotImg from "./assets/Visuals/mnrmicro.gif";
 import crushingImg from "./assets/Visuals/crushing.gif";
 import lvdtImg from "./assets/Visuals/lvdt.gif";
