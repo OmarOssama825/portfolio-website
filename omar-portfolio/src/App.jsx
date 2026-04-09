@@ -763,11 +763,11 @@ export default function App() {
                 Download CV
               </a>
 
-              <a className="btn btn-secondary" href="#" target="_blank" rel="noreferrer">
+              <a className="btn btn-secondary" href="https://scholar.google.fr/citations?user=XUhsROIAAAAJ" target="_blank" rel="noreferrer">
                 Google Scholar
               </a>
 
-              <a className="btn btn-secondary" href="#" target="_blank" rel="noreferrer">
+              <a className="btn btn-secondary" href="https://www.researchgate.net/profile/Omar-Ossama" target="_blank" rel="noreferrer">
                 ResearchGate
               </a>
             </div>
